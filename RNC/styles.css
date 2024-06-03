@@ -1,0 +1,117 @@
+:root {
+    --FONT-COLOR: white;
+    --BORDER-COLOR: white;
+    --BODY-BG: #1d183b;
+    --ELEMENTS-BG: #3b3947;
+
+    --INPUT-BG: white;
+    --INPUT-FONT-COLOR: black;
+
+    --ERROR-BG: pink;
+    --ERROR-FONT-COLOR: red;
+    --ERROR-BORDER-COLOR: red;
+}
+  
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+  
+  body {
+    background-color: var(--BODY-BG);
+    color: var(--FONT-COLOR);
+    
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  /* HEADER */
+  
+  header > h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem;
+   
+  }
+  
+  header > h1 > span {
+    white-space: nowrap;
+  }
+  
+  
+
+  /* FORM */
+  
+  form {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--FORM-BG);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 4px solid var(--BORDER-COLOR);
+  }
+  
+  form > label {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  form > #input-number {
+    text-align: center;
+    color: var(--INPUT-FONT-COLOR);
+    font-size: 3rem;
+    width: 400px;
+    height: 100px;
+    background-color: var(--INPUT-BG);
+    border: 1px solid var(--FONT-COLOR);
+  }
+  
+  form > #convert-btn {
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(gold, orange);
+    border: 2px solid orange;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  
+
+  /* OUTPUT */
+  
+  #output{
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--ELEMENTS-BG);
+    padding: 2rem;
+    border: 4px solid var(--BORDER-COLOR);
+    margin-top: 1rem;
+  }
+  
+  #output.invalid-input {
+    color: var(--ERROR-FONT-COLOR);
+    background-color: var(--ERROR-BG);
+    border: 4px solid var(--ERROR-BORDER-COLOR);
+  }
